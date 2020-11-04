@@ -1,0 +1,4 @@
+[DEBUG] 2020-10-09 14:55:32.807 [main] LoggerDemo - Debug Message
+[INFO ] 2020-10-09 14:55:32.821 [main] LoggerDemo - Info Message
+[ERROR] 2020-10-09 14:55:32.821 [main] LoggerDemo - Error..
+[FATAL] 2020-10-09 14:55:32.821 [main] LoggerDemo - Fatal..

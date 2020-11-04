@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="trace	">
+
+	<Properties>
+		<Property name="basePath">./Logs</Property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="FILEOUT"
+			fileName="${basePath}/LogFile.log"
+			filePattern="${basePath}/LogFile-%d{yyyy-MM-dd}.log">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] [%-5Level] %logger{36} - %msg%n" />
+			<Policies>
+				<SizeBasedTriggeringPolicy size="500" />
+			</Policies>
+		</RollingFile>
+
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout
+				pattern="%d{HH:mm:ss.SSS} [%t] [%-5Level] %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+
+		<!-- Use below line to log for specific class -->
+		<!-- <Logger name="demo.LoggerDemo" level="trace" additivity="false">
+			<AppenderRef ref="FILEOUT" />
+		</Logger> -->
+
+		<!-- Below is default line to log details in all classes -->
+		<Root level="trace" additivity="false">
+			<AppenderRef ref="FILEOUT" level="trace" />
+			<AppenderRef ref="STDOUT" level="error" />
+		</Root>
+	</Loggers>
+</Configuration>

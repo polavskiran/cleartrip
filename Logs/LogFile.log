@@ -1,0 +1,6 @@
+[ERROR] 2020-10-09 14:57:10.987 [main] LoggerDemo - Error..
+[FATAL] 2020-10-09 14:57:10.999 [main] LoggerDemo - Fatal..
+[DEBUG] 2020-10-09 14:57:37.221 [main] LoggerDemo - Debug Message
+[INFO ] 2020-10-09 14:57:37.228 [main] LoggerDemo - Info Message
+[ERROR] 2020-10-09 14:57:37.228 [main] LoggerDemo - Error..
+[FATAL] 2020-10-09 14:57:37.228 [main] LoggerDemo - Fatal..
