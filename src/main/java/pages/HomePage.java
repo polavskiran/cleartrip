@@ -32,7 +32,7 @@ public class HomePage extends BaseClass {
 		enterOriginStation("Delhi");
 		enterDestination("Bangalore");
 
-		enterDate("10/12/2020");
+		enterDate("10/01/2021");
 		Thread.sleep(5000);
 
 		driver.findElement(By.id("SearchBtn")).click();
@@ -83,7 +83,7 @@ public class HomePage extends BaseClass {
 		Date fromDate = new SimpleDateFormat("dd/MM/yyyy").parse(date);
 		SimpleDateFormat sdf = new SimpleDateFormat("dd MMMM yyyy");
 		strDate = sdf.format(fromDate);
-		System.out.println("Date Format with dd MMMM yyyy : " + strDate);
+		//System.out.println("Date Format with dd MMMM yyyy : " + strDate);
 
 		String[] dates = strDate.split(" ");
 		String monthday = dates[0];
